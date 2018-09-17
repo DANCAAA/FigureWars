@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figure Wars", "Assembly-CSharp.csproj", "{AE031E55-DCD5-E6B2-F5DB-8D5172157E26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE031E55-DCD5-E6B2-F5DB-8D5172157E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE031E55-DCD5-E6B2-F5DB-8D5172157E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE031E55-DCD5-E6B2-F5DB-8D5172157E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE031E55-DCD5-E6B2-F5DB-8D5172157E26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
