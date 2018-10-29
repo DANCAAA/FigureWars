@@ -10,6 +10,9 @@ TagManager:
   - Castle
   - Character
   - Enemy
+  - Castle
+  - Character
+  - Enemy
   layers:
   - Default
   - TransparentFX

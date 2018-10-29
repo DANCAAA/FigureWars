@@ -17,5 +17,7 @@ public class Circle : Character {
         {
             Destroy(gameObject);
         }
+
+        lifetext.GetComponent<TextMesh>().text = life.ToString();
     }
 }

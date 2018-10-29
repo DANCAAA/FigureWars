@@ -8,15 +8,19 @@ public class Castle : MonoBehaviour {
     private float life;
     [SerializeField]
     private float reconstructionTime;
+    [SerializeField]
+    private GameObject lifetext;
 
 
     public void TakeDamage(float amount)
     {
         life -= amount;
+        lifetext.GetComponent<TextMesh>().text = life.ToString();
     }
 
     public void Reconstruction(float amount)
     {
         life += amount;
+        lifetext.GetComponent<TextMesh>().text = life.ToString();
     }
 }

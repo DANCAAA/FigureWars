@@ -13,7 +13,13 @@ public class Generic : Enemy {
 	void Update () {
 
         Move();
+        lifetext.GetComponent<TextMesh>().text = life.ToString();
 
-	}
+        if(life <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 
 }

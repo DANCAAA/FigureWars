@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Actor : MonoBehaviour {
 
     public float life,speed,atack,def,atkspeed;
     protected bool atacking;
+    [SerializeField]
+    protected GameObject lifetext;
 
 	
 	// Update is called once per frame
