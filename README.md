@@ -1,4 +1,4 @@
-Entrega Alpha Proyecto
+Entrega Betha Proyecto
 
 Miembros del equipo:
 
