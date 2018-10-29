@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Castle : MonoBehaviour {
 
-    [SerializeField]
-    private float life;
+    public float life;
     [SerializeField]
     private float reconstructionTime;
     [SerializeField]

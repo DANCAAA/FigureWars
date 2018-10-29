@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4306244394314796}
   - component: {fileID: 212998233403465922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PieIz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4410334795016202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 61002270176828164}
   - component: {fileID: 50939305986456154}
   - component: {fileID: 95850502097280820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CubeCharacter
   m_TagString: Character
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4090044208088972}
   - component: {fileID: 212669556974361264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4853767621077106}
   - component: {fileID: 212940582887091352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4778753630788364}
   - component: {fileID: 212665749131858102}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PieDer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 4358785650328270}
   - component: {fileID: 23796054012213826}
   - component: {fileID: 102049748868180548}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LifeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 929d9765af46e6d49a9f8d73de87f16a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

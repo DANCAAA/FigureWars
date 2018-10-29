@@ -9,10 +9,11 @@ public abstract class Actor : MonoBehaviour {
     protected bool atacking;
     [SerializeField]
     protected GameObject lifetext;
+    protected Animator anim;
 
-	
-	// Update is called once per frame
-	
+
+    // Update is called once per frame
+
 
     public virtual void Move()
     {
@@ -29,6 +30,6 @@ public abstract class Actor : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    
+    public abstract void Atacar();
 
 }

@@ -63,12 +63,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Gameplay\Actor.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Boss.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Boss1.cs" />
     <Compile Include="Assets\Scripts\Gameplay\CameraSwipe.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Castle.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Character.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Circle.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\DistanceEnemy.cs" />
     <Compile Include="Assets\Scripts\Gameplay\DragCharacter.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Flecha.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\FlechaE.cs" />
     <Compile Include="Assets\Scripts\Gameplay\GeneratorManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Generic.cs" />
     <Compile Include="Assets\Scripts\Gameplay\MouseOver.cs" />
@@ -76,6 +80,7 @@
     <Compile Include="Assets\Scripts\Gameplay\ResourseManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Square.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Triangle.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Warrior.cs" />
     <Compile Include="Assets\Scripts\Inventory &amp; Store\Armor.cs" />
     <Compile Include="Assets\Scripts\Inventory &amp; Store\Consumable.cs" />
     <Compile Include="Assets\Scripts\Inventory &amp; Store\Currency.cs" />

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Generic : Enemy {
+   
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -20,6 +21,11 @@ public class Generic : Enemy {
             Destroy(gameObject);
         }
 
+    }
+
+    public override void Atacar()
+    {
+        throw new System.NotImplementedException();
     }
 
 }

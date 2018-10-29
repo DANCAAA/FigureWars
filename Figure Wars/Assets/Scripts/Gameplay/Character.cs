@@ -4,24 +4,16 @@ using UnityEngine;
 
 public abstract class Character : Actor {
 
-  
+    
 
     public override void Move()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
-    }
+    }   
 
 
     public override void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log("colisionando");
-        if (collision.gameObject.tag == "Enemy" && !atacking)
-        {
-            Atack(collision.gameObject);
-            atacking = true;
-            StartCoroutine("atackingoff");
-        }
-
         if(collision.gameObject.tag == "Castle")
         {
             collision.gameObject.GetComponent<Castle>().TakeDamage(atack);
@@ -40,4 +32,10 @@ public abstract class Character : Actor {
         yield return new WaitForSeconds(atkspeed);
         atacking = false;
     }
+
+    public void TakeDamage(float daño)
+    {
+        life -= daño;
+    }
+
 }

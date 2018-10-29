@@ -20,8 +20,25 @@ GameObject:
   m_Component:
   - component: {fileID: 4712270353706722}
   - component: {fileID: 212757432312813914}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pie 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1101012304630240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4729044529386034}
+  - component: {fileID: 23018103443522432}
+  - component: {fileID: 102062254734785480}
+  m_Layer: 9
+  m_Name: LifeText (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +53,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4547122929044950}
   - component: {fileID: 212914395837744276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pie 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +69,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4055230433187172}
   - component: {fileID: 212184613134042264}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Arm Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4460453263048610}
   - component: {fileID: 212194719945871232}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pie 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4412925914510410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,9 +117,13 @@ GameObject:
   - component: {fileID: 4560002242479206}
   - component: {fileID: 212770514139504788}
   - component: {fileID: 95412727529370858}
-  m_Layer: 0
+  - component: {fileID: 70488975379234940}
+  - component: {fileID: 61315991253335180}
+  - component: {fileID: 50097709818444318}
+  - component: {fileID: 114375599595212478}
+  m_Layer: 10
   m_Name: Boss 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4636094204722194}
   - component: {fileID: 212969545212356438}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Arm Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4822413494795690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4513732816961110}
   - component: {fileID: 212068476741834822}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pie 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4354994478474132}
   - component: {fileID: 212786621366812578}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,11 +278,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553079821817344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.24, y: 0.75, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 41.211, y: -1.02, z: 0}
+  m_LocalScale: {x: 0.383785, y: 0.383785, z: 0.76757}
   m_Children:
   - {fileID: 4412925914510410}
   - {fileID: 4822413494795690}
+  - {fileID: 4729044529386034}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -291,6 +313,19 @@ Transform:
   m_Father: {fileID: 4822413494795690}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4729044529386034
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101012304630240}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.23, y: 7.75, z: -13.028128}
+  m_LocalScale: {x: 0.47570905, y: 0.47570905, z: 0.23785453}
+  m_Children: []
+  m_Father: {fileID: 4560002242479206}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4822413494795690
 Transform:
   m_ObjectHideFlags: 1
@@ -309,6 +344,101 @@ Transform:
   m_Father: {fileID: 4560002242479206}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23018103443522432
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101012304630240}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!50 &50097709818444318
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553079821817344}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 50
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!61 &61315991253335180
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553079821817344}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.102663, y: -1.1541429}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.53, y: 13.11}
+    newSize: {x: 7.53, y: 13.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.262631, y: 11.195491}
+  m_EdgeRadius: 0
+--- !u!70 &70488975379234940
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553079821817344}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.24401335, y: -1.3420707}
+  m_Size: {x: 8.018026, y: 15.794123}
+  m_Direction: 0
 --- !u!95 &95412727529370858
 Animator:
   serializedVersion: 3
@@ -327,6 +457,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!102 &102062254734785480
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101012304630240}
+  m_Text: 10
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 1
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+--- !u!114 &114375599595212478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553079821817344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c0b372e97f23a43a418bb48372edbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 100
+  speed: 0.3
+  atack: 15
+  def: 0
+  atkspeed: 2
+  lifetext: {fileID: 1101012304630240}
+  proyectil: {fileID: 1433340210203092, guid: f1829c078d767074d916149463c3518e, type: 2}
 --- !u!212 &212068476741834822
 SpriteRenderer:
   m_ObjectHideFlags: 1

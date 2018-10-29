@@ -29,6 +29,14 @@ public abstract class Enemy : Actor {
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Character")
+        {
+            life -= collision.gameObject.GetComponent<Character>().atack;
+        }
+    }
+
     private void Atack(GameObject target)
     {
         target.GetComponent<Character>().life -= (atack - target.GetComponent<Character>().def /2);
@@ -39,6 +47,11 @@ public abstract class Enemy : Actor {
     {
         yield return new WaitForSeconds(atkspeed);
         atacking = false;
+    }
+
+    public void TakeDamage(float daño)
+    {
+        life -= daño;
     }
 
 }

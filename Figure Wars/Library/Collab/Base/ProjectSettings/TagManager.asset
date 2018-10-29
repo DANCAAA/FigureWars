@@ -7,6 +7,9 @@ TagManager:
   - LineTop
   - LineMidle
   - LineDown
+  - Castle
+  - Character
+  - Enemy
   layers:
   - Default
   - TransparentFX

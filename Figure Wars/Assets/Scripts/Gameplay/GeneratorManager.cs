@@ -16,7 +16,11 @@ public class GeneratorManager : MonoBehaviour {
     [SerializeField]
     private Enemy[] enemies;
     [SerializeField]
-    private Transform[] spawnPointsEnemies; 
+    private Transform[] spawnPointsEnemies;
+    [SerializeField]
+    private Castle castilloEnemigo;
+    [SerializeField]
+    private GameObject boss;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +31,10 @@ public class GeneratorManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        if(castilloEnemigo.life <= 0)
+        {
+            boss.SetActive(true);
+        }
     }
 
     public void SpawnCharacter(int index, int line, int price)
@@ -46,7 +53,7 @@ public class GeneratorManager : MonoBehaviour {
 
     public void SpawnEnemy()
     {
-        Instantiate(enemies[0], spawnPointsEnemies[Random.Range(0,3)].position, transform.rotation);
+        Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPointsEnemies[Random.Range(0,3)].position, transform.rotation);
     }
 
 
